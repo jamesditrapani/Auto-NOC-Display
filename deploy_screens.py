@@ -1,3 +1,4 @@
+#!/usr/bin/python3.4
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
@@ -37,7 +38,8 @@ def get_window_size(index):
     default_width = 1920 
     # Will offset the spawn point of the browser
     width = 100 + (default_width * index) 
-    height = 300
+    # Set window height, only needed if not adding --start-fullscreen as an option
+		height = 300
     return width, height 
 
 options = define_args()
