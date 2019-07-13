@@ -39,7 +39,7 @@ def get_window_size(index):
     # Will offset the spawn point of the browser
     width = 100 + (default_width * index) 
     # Set window height, only needed if not adding --start-fullscreen as an option
-		height = 300
+    height = 300
     return width, height 
 
 options = define_args()
